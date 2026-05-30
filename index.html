@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瑰意琦行 - 玫瑰醋官方旗舰店</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <a href="#" class="logo">
+                        <img src="images/image_0_23.png" alt="瑰意琦行">
+                        <span>瑰意琦行旗舰店</span>
+                    </a>
+                </div>
+                <div class="header-center">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="搜索玫瑰醋、饮品、礼品...">
+                        <button id="searchBtn">搜索</button>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="header-link" id="userLink">👤 登录</a>
+                    <a href="#" class="header-link" id="cartLink">🛒 购物车 (0)</a>
+                    <a href="#" class="header-link" id="favoriteLink">❤️ 收藏</a>
+                </div>
+            </div>
+        </div>
+        <!-- 分类导航 -->
+        <nav class="category-nav">
+            <div class="container">
+                <div class="category-all">
+                    <span>🍭 全部商品</span>
+                </div>
+                <ul class="category-list">
+                    <li><a href="#product-list" data-cat="all">全部</a></li>
+                    <li><a href="#product-list" data-cat="rose">玫瑰醋</a></li>
+                    <li><a href="#product-list" data-cat="gift">礼品装</a></li>
+                    <li><a href="#product-list" data-cat="box">礼盒装</a></li>
+                    <li><a href="#product-list" data-cat="trial">尝鲜装</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主体内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 左侧商品列表 -->
+                <section id="product-list" class="product-list">
+                    <div class="list-header">
+                        <h2>🍷 玫瑰醋系列</h2>
+                        <div class="sort-options">
+                            <button class="sort-btn active" data-sort="default">综合排序</button>
+                            <button class="sort-btn" data-sort="price">价格排序</button>
+                            <button class="sort-btn" data-sort="sales">销量优先</button>
+                        </div>
+                    </div>
+                    <div class="products-grid">
+                        <!-- 商品卡片 -->
+                        <div class="product-card" data-cat="rose">
+                            <div class="product-img" onclick="showProductDetail(1)">
+                                <img src="images/vinegar_1.jpg" alt="玫瑰醋经典款">
+                                <span class="hot-tag">爆款</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(1)">瑰意琦行 玫瑰醋经典款 330ml</h3>
+                                <p class="product-desc">云南高原玫瑰 · 传统工艺酿造 · 美容养颜</p>
+                                <div class="product-price">
+                                    <span class="price">¥28</span>
+                                    <span class="original-price">¥38</span>
+                                </div>
+                                <div class="product-sales">已售 2,680</div>
+                                <button class="add-cart-btn" onclick="addToCart(1)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-cat="gift">
+                            <div class="product-img" onclick="showProductDetail(2)">
+                                <img src="images/vinegar_1.jpg" alt="玫瑰醋礼盒">
+                                <span class="new-tag">新品</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(2)">瑰意琦行 玫瑰醋精品礼盒 6瓶装</h3>
+                                <p class="product-desc">精美包装 · 送礼佳品 · 民族风情</p>
+                                <div class="product-price">
+                                    <span class="price">¥158</span>
+                                    <span class="original-price">¥198</span>
+                                </div>
+                                <div class="product-sales">已售 892</div>
+                                <button class="add-cart-btn" onclick="addToCart(2)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-cat="box">
+                            <div class="product-img" onclick="showProductDetail(3)">
+                                <img src="images/vinegar_2.jpg" alt="玫瑰醋尊享礼盒">
+                                <span class="gift-tag">送礼首选</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(3)">瑰意琦行 尊享礼盒 12瓶装</h3>
+                                <p class="product-desc">高端礼盒 · 企业团购 · 节日礼品</p>
+                                <div class="product-price">
+                                    <span class="price">¥288</span>
+                                    <span class="original-price">¥368</span>
+                                </div>
+                                <div class="product-sales">已售 356</div>
+                                <button class="add-cart-btn" onclick="addToCart(3)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-cat="trial">
+                            <div class="product-img" onclick="showProductDetail(4)">
+                                <img src="images/vinegar_1.jpg" alt="玫瑰醋尝鲜装">
+                                <span class="trial-tag">尝鲜价</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(4)">瑰意琦行 玫瑰醋尝鲜装 180ml</h3>
+                                <p class="product-desc">便携装 · 初次体验 · 新鲜直达</p>
+                                <div class="product-price">
+                                    <span class="price">¥12.9</span>
+                                    <span class="original-price">¥18</span>
+                                </div>
+                                <div class="product-sales">已售 5,234</div>
+                                <button class="add-cart-btn" onclick="addToCart(4)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-cat="rose">
+                            <div class="product-img" onclick="showProductDetail(5)">
+                                <img src="images/vinegar_2.jpg" alt="玫瑰醋家庭装">
+                                <span class="hot-tag">热销</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(5)">瑰意琦行 玫瑰醋家庭装 500ml</h3>
+                                <p class="product-desc">大容量 · 家庭分享 · 健康生活</p>
+                                <div class="product-price">
+                                    <span class="price">¥45</span>
+                                    <span class="original-price">¥58</span>
+                                </div>
+                                <div class="product-sales">已售 1,892</div>
+                                <button class="add-cart-btn" onclick="addToCart(5)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-cat="gift">
+                            <div class="product-img" onclick="showProductDetail(6)">
+                                <img src="images/vinegar_1.jpg" alt="玫瑰醋定制礼盒">
+                                <span class="new-tag">定制款</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(6)">瑰意琦行 定制礼盒 企业定制</h3>
+                                <p class="product-desc">专属定制 · 企业礼品 · 个性包装</p>
+                                <div class="product-price">
+                                    <span class="price">¥388</span>
+                                    <span class="original-price">¥488</span>
+                                </div>
+                                <div class="product-sales">已售 156</div>
+                                <button class="add-cart-btn" onclick="addToCart(6)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <!-- 明信片套装 -->
+                        <div class="product-card" data-cat="gift">
+                            <div class="product-img" onclick="showProductDetail(7)">
+                                <img src="images/postcard_1.jpg" alt="精美明信片套装">
+                                <span class="new-tag">文创</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(7)">瑰意琦行 精美明信片套装</h3>
+                                <p class="product-desc">云南民族风情 · 玫瑰主题 · 一套8张</p>
+                                <div class="product-price">
+                                    <span class="price">¥38</span>
+                                    <span class="original-price">¥48</span>
+                                </div>
+                                <div class="product-sales">已售 1,234</div>
+                                <button class="add-cart-btn" onclick="addToCart(7)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <!-- 钥匙扣 -->
+                        <div class="product-card" data-cat="gift">
+                            <div class="product-img" onclick="showProductDetail(8)">
+                                <img src="images/keychain.jpg" alt="玫瑰钥匙扣">
+                                <span class="new-tag">周边</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(8)">瑰意琦行 玫瑰钥匙扣</h3>
+                                <p class="product-desc">精美金属工艺 · 玫瑰造型 · 时尚配饰</p>
+                                <div class="product-price">
+                                    <span class="price">¥25</span>
+                                    <span class="original-price">¥35</span>
+                                </div>
+                                <div class="product-sales">已售 892</div>
+                                <button class="add-cart-btn" onclick="addToCart(8)">加入购物车</button>
+                            </div>
+                        </div>
+
+                        <!-- 徽章 -->
+                        <div class="product-card" data-cat="gift">
+                            <div class="product-img" onclick="showProductDetail(9)">
+                                <img src="images/badge.jpg" alt="玫瑰徽章">
+                                <span class="new-tag">周边</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name" onclick="showProductDetail(9)">瑰意琦行 玫瑰徽章</h3>
+                                <p class="product-desc">珐琅工艺 · 精致收藏 · 纪念意义</p>
+                                <div class="product-price">
+                                    <span class="price">¥18</span>
+                                    <span class="original-price">¥28</span>
+                                </div>
+                                <div class="product-sales">已售 654</div>
+                                <button class="add-cart-btn" onclick="addToCart(9)">加入购物车</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 右侧店铺信息 -->
+                <aside class="sidebar">
+                    <!-- 店铺信息 -->
+                    <div class="shop-info">
+                        <div class="shop-header">
+                            <img src="images/image_0_23.png" alt="店铺Logo">
+                            <div class="shop-detail">
+                                <h3>瑰意琦行旗舰店</h3>
+                                <div class="shop-rating">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                    <span>4.9分</span>
+                                </div>
+                                <div class="shop-data">
+                                    <span>月销 8,000+</span>
+                                    <span>|</span>
+                                    <span>粉丝 25,000+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="follow-btn" onclick="toggleFollow()">+ 关注店铺</button>
+                    </div>
+
+                    <!-- 优惠券 -->
+                    <div class="coupon-section">
+                        <h4>🎫 店铺优惠券</h4>
+                        <div class="coupon-list">
+                            <div class="coupon-item">
+                                <span class="coupon-value">¥10</span>
+                                <span class="coupon-condition">满99可用</span>
+                                <button class="coupon-get">领取</button>
+                            </div>
+                            <div class="coupon-item">
+                                <span class="coupon-value">¥20</span>
+                                <span class="coupon-condition">满199可用</span>
+                                <button class="coupon-get">领取</button>
+                            </div>
+                            <div class="coupon-item">
+                                <span class="coupon-value">¥50</span>
+                                <span class="coupon-condition">满499可用</span>
+                                <button class="coupon-get">领取</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 热门推荐 -->
+                    <div class="hot-recommend">
+                        <h4>🔥 热销爆款</h4>
+                        <div class="hot-list">
+                            <div class="hot-item" onclick="showProductDetail(1)">
+                                <img src="images/vinegar_1.jpg" alt="热销1">
+                                <div class="hot-info">
+                                    <p>玫瑰醋经典款</p>
+                                    <span>¥28</span>
+                                </div>
+                            </div>
+                            <div class="hot-item" onclick="showProductDetail(4)">
+                                <img src="images/vinegar_1.jpg" alt="热销2">
+                                <div class="hot-info">
+                                    <p>尝鲜装180ml</p>
+                                    <span>¥12.9</span>
+                                </div>
+                            </div>
+                            <div class="hot-item" onclick="showProductDetail(2)">
+                                <img src="images/vinegar_1.jpg" alt="热销3">
+                                <div class="hot-info">
+                                    <p>精品礼盒</p>
+                                    <span>¥158</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 商品详情弹窗 -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- 商品详情内容 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 购物车弹窗 -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content cart-modal">
+            <div class="modal-header">
+                <h3>🛒 我的购物车</h3>
+                <span class="close" onclick="closeCartModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="cartBody">
+                <div class="empty-cart">
+                    <p>购物车是空的</p>
+                    <button onclick="closeCartModal()">去逛逛</button>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>合计:</span>
+                    <span class="total-price">¥0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">结算</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部固定栏 -->
+    <div class="bottom-bar">
+        <div class="container">
+            <div class="bottom-left">
+                <a href="#" class="bottom-link">首页</a>
+                <a href="#" class="bottom-link">分类</a>
+                <a href="#" class="bottom-link">店铺</a>
+                <a href="#" class="bottom-link">我的</a>
+            </div>
+            <div class="bottom-right">
+                <button class="cart-btn" onclick="openCart()">🛒 购物车</button>
+                <button class="buy-btn">立即购买</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">团队介绍</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>购物指南</h4>
+                    <ul>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">配送说明</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>售后服务</h4>
+                    <ul>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">售后保障</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>🌸 联系我们</h4>
+                    <p>📞 电话：13150546569</p>
+                    <p>📧 邮箱：3285055190@qq.com</p>
+                    <p>🏠 地址：云南民族大学</p>
+                    <p>⏰ 工作时间：9:00-21:00</p>
+                </div>
+            </div>
+            <div class="footer-ethnic">
+                <div class="ethnic-border"></div>
+                <div class="footer-slogan">
+                    <span>🌹 瑰意琦行 · 云南民族风情玫瑰醋</span>
+                    <span>传承非遗文化 · 助力乡村振兴</span>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 瑰意琦行旗舰店 · 云南民族大学创业团队</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
