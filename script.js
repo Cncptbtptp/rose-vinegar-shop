@@ -8,7 +8,7 @@ const products = [
         originalPrice: 38,
         sales: 2680,
         cat: 'rose',
-        images: ['images/vinegar_1.jpg', 'images/vinegar_2.jpg', 'images/vinegar_1.jpg'],
+        images: ['vinegar_1.jpg', 'vinegar_2.jpg', 'vinegar_1.jpg'],
         specs: ['经典款', '低糖版', '无糖版']
     },
     {
@@ -19,7 +19,7 @@ const products = [
         originalPrice: 198,
         sales: 892,
         cat: 'gift',
-        images: ['images/vinegar_1.jpg', 'images/vinegar_2.jpg', 'images/vinegar_1.jpg'],
+        images: ['vinegar_1.jpg', 'vinegar_2.jpg', 'vinegar_1.jpg'],
         specs: ['6瓶装', '8瓶装']
     },
     {
@@ -30,7 +30,7 @@ const products = [
         originalPrice: 368,
         sales: 356,
         cat: 'box',
-        images: ['images/vinegar_2.jpg', 'images/vinegar_1.jpg', 'images/vinegar_2.jpg'],
+        images: ['vinegar_2.jpg', 'vinegar_1.jpg', 'vinegar_2.jpg'],
         specs: ['12瓶装', '16瓶装']
     },
     {
@@ -41,7 +41,7 @@ const products = [
         originalPrice: 18,
         sales: 5234,
         cat: 'trial',
-        images: ['images/vinegar_1.jpg', 'images/vinegar_2.jpg', 'images/vinegar_1.jpg'],
+        images: ['vinegar_1.jpg', 'vinegar_2.jpg', 'vinegar_1.jpg'],
         specs: ['单瓶装', '3瓶装']
     },
     {
@@ -52,7 +52,7 @@ const products = [
         originalPrice: 58,
         sales: 1892,
         cat: 'rose',
-        images: ['images/vinegar_2.jpg', 'images/vinegar_1.jpg', 'images/vinegar_2.jpg'],
+        images: ['vinegar_2.jpg', 'vinegar_1.jpg', 'vinegar_2.jpg'],
         specs: ['单瓶装', '2瓶装']
     },
     {
@@ -63,7 +63,7 @@ const products = [
         originalPrice: 488,
         sales: 156,
         cat: 'gift',
-        images: ['images/vinegar_1.jpg', 'images/vinegar_2.jpg', 'images/vinegar_1.jpg'],
+        images: ['vinegar_1.jpg', 'vinegar_2.jpg', 'vinegar_1.jpg'],
         specs: ['标准定制', '高级定制']
     },
     {
@@ -74,7 +74,7 @@ const products = [
         originalPrice: 48,
         sales: 1234,
         cat: 'gift',
-        images: ['images/postcard_1.jpg', 'images/postcard_2.jpg', 'images/postcard_3.jpg'],
+        images: ['postcard_1.jpg', 'postcard_2.jpg', 'postcard_3.jpg'],
         specs: ['一套8张', '单张随机']
     },
     {
@@ -85,7 +85,7 @@ const products = [
         originalPrice: 35,
         sales: 892,
         cat: 'gift',
-        images: ['images/keychain.jpg', 'images/keychain.jpg', 'images/keychain.jpg'],
+        images: ['keychain.jpg', 'keychain.jpg', 'keychain.jpg'],
         specs: ['玫瑰金', '银色']
     },
     {
@@ -96,7 +96,7 @@ const products = [
         originalPrice: 28,
         sales: 654,
         cat: 'gift',
-        images: ['images/badge.jpg', 'images/badge.jpg', 'images/badge.jpg'],
+        images: ['badge.jpg', 'badge.jpg', 'badge.jpg'],
         specs: ['玫瑰款', '民族款']
     }
 ];
